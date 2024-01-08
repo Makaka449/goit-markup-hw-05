@@ -850,7 +850,7 @@ img{
     margin-bottom: 24px;
 }
 
-.privacy_input:visually-hidden {
+.privacy_input {
     
 }
 
@@ -872,7 +872,7 @@ img{
     align-items: center;
     justify-content: center;
     fill: transparent;
-    
+
 }
 
 
