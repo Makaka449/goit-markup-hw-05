@@ -850,8 +850,14 @@ img{
     margin-bottom: 24px;
 }
 
-.privacy_input {
+.privacy_input{
     
+}
+
+.privacy_input:checked {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .div_privacy_label{
@@ -875,7 +881,9 @@ img{
 
 }
 
-
+.div_privacy_a{
+    color: #4d5ae5;
+}
 
 
 
