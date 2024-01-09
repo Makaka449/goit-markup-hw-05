@@ -547,7 +547,7 @@ img{
 
 .team_ul{
     display: flex;
-    gap: 24px;
+    gap: 72px;
     flex-wrap: wrap;
 }
 
@@ -561,10 +561,23 @@ img{
 }
 
 
+'
 
 @media screen and (min-width: 768px){
     .team_li{
         width: calc((100% - 23px) / 2);
+    }
+
+    .team_ul{
+        
+        gap: 24px 64px;
+        
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .team_li{
+        width: calc((100% - 72px) / 4);
     }
 }
 
