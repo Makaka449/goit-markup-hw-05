@@ -31,14 +31,72 @@ img{
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+  }
+
+.section{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+@media screen and (min-width: 768px){
+    .section{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
 .container {
-    width: 1158px;
+    min-width: 320px;
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15px;*/
     
 }
 
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 736px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
+@media screen and (min-width: 1440px) {
+    .container{
+        max-width: 1158px;
+    }
+}
 
 /*==============HEADER=============*/
 
@@ -243,25 +301,6 @@ img{
 
 /*==============strategy=============*/
 
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-  }
 
 
 .strategy {
@@ -488,8 +527,13 @@ img{
 
 }
 
+
+
 .logo_team{
     margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -497,6 +541,7 @@ img{
     text-transform: capitalize;
     color: #2e2f42;
 }
+
 
 .team_li_svg{
     height: 40px;
@@ -514,7 +559,11 @@ img{
     
 }
 
+@media screen and (min-width: 768px) {
+    .team_li{}
+}
 
+'
 .team_svg{
     width: 100%;
     height: 100%;
