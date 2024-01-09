@@ -506,14 +506,24 @@ img{
     padding: 96px 0;
     margin-top: 120px;
     
+
+    
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .footer-p{
-    max-width: 264px;
+    max-width: 268px;
     color: #F4F4FD;
     letter-spacing: 0.02em;
     line-height: 1.5;
     text-align: left;
+    text-align: center;
     
 }
 
@@ -556,6 +566,28 @@ img{
     color:  #FFFFFF;
 
 }
+
+.footer_wrapper_name{
+
+}
+
+@media screen and (max-width: 767px){
+    .footer-logo,
+    .footer_p_div,
+    .footer_wrapper_name {
+        display: block;
+        text-align:center;
+    }
+    .footer_wrapper_input,
+    .container_footer_wrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+}
+
 
 .footer_ul{
     display: flex;
@@ -616,15 +648,23 @@ img{
 }
 
 .container_footer_wrapper{
-
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
 }
 
-.footer_input{
-    width: 288px;
 
-}
 
 .footer_btn{
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
 
 }
 
@@ -633,6 +673,7 @@ img{
         margin-top: 96px;
     }
 }
+
 
 
 /*=====team=====*/
